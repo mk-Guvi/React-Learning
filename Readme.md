@@ -62,3 +62,13 @@ useStateHook- Functional Component
 
 this.state-class Component
 
+Remember while using SetState:
+
+anyother time to change state setstate has to be used
+
+Always  make use of SetStates and never modify the state directly
+
+code has to be executed after the state has been updated then place that code in the call back function which is the second argument to the setstate metho
+
+when you have to update state based on previous state value,pass in a function  as argument of the regular object
+
