@@ -34,7 +34,31 @@ ADVANTAGES:
 Maintain their own Private data-STATE
 Provides life cycle hooks
 
+PROPS VS STATES
+
 Props:
+
 props are nothing but the properties is optional inputs that component can accept and allows the component to be dyanamic
   
  props are Immutable
+
+Function Parameters
+
+props get passed to the component
+
+props-Functional components
+
+this.props-Class components
+
+States:
+
+States are Mutable(changed)
+
+variables decalred in function body
+
+state is managed within the component
+
+useStateHook- Functional Component
+
+this.state-class Component
+
