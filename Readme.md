@@ -1,4 +1,4 @@
-JSX
+JSX:
 
 JavaScript XML (JSX)- Extension to the JavaScript language syntax.
 
@@ -19,3 +19,22 @@ for -> htmlFor
 camelCase property naming convention
 onclick -> onClick
 tabindex -> tablndex
+
+Functional Components:
+They are just JS Functions that accepts inputs and returns HTML(JSX) which describes UI.
+
+        ADVANTAGES:
+            Absence of "this" keyword
+
+
+Class Components:
+They are ES6 classes that extends component class from the React Libraries.
+It must require the Render Method that returns the HTML.
+ADVANTAGES:
+Maintain their own Private data-STATE
+Provides life cycle hooks
+
+Props:
+props are nothing but the properties is optional inputs that component can accept and allows the component to be dyanamic
+  
+ props are Immutable
