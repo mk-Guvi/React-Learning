@@ -74,3 +74,13 @@ code has to be executed after the state has been updated then place that code in
 
 when you have to update state based on previous state value,pass in a function  as argument of the regular object
 
+Event Handler Bindings Methods:
+
+1(refer EventBinding file):This Method  every update to the state will cause component to rerender this inturn will generate a new eventhandler for every renders ...for small apps the performance will not be affected and vice versa for big apps and for the components that contain nested child components.
+
+
+2:Arrow Function(refer EventBinding file):It is similar to the previous method that has some performance simplifications in some scenerios 
+
+3:Binding Event handlers In Constructor(refer EventBinding file).
+
+4:Arrow Function As Class Property(refer EventBinding file):Not yet Released in React.Under Development
