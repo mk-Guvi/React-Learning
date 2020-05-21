@@ -1,7 +1,7 @@
 import React, { Component } from "react"; //to use class import the {component} from react lib
 class counter extends Component {
-  constructor() {
-    super();
+  constructor() {//constructor is a specific method that builds in to JS that initializes the parts of this class
+    super();//super is req when constructor is used.It is  a global function ,It goes to the parent class and brings some of the features that our component clas can use it
     this.state = {
       count: 0
     };

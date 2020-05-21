@@ -52,6 +52,8 @@ this.props-Class components
 
 States:
 
+States is simply a data that component maintains,it can change its values too.
+
 States are Mutable(changed)
 
 variables decalred in function body
