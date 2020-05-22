@@ -7,6 +7,7 @@ import States from "../components/State";
 import SetStates from "../components/SetState";
 import EventHandler from "../components/EventHandler";
 import EventBind from "../components/EventBindings"
+import ChangeState from "../components/ChangeState"
 function App() {
   return (
     <div>
@@ -23,6 +24,10 @@ function App() {
       <h1> Events:</h1>
       <EventHandler />
       <EventBind/>
+      <h1>Change State :</h1>
+      <ChangeState/>
+ 
+  
     </div>
   );
 }
