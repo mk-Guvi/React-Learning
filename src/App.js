@@ -10,10 +10,11 @@ import EventBind from "../components/EventBindings"
 import ChangeState from "../components/ChangeState"
 import ParentComponent from "../components/ParentComponent"
 import Condtional from "../components/Conditonal"
+import List from "../components/List"
 function App() {
   return (
     <div>
-      <Fun />
+    {/*  <Fun />
       <Clas />
       <Jsx />
       <Props Num="1" />
@@ -32,8 +33,12 @@ function App() {
       <ParentComponent/>
       <h1>Condtional</h1>
       <Condtional/>
+      
           
-  
+    */}
+    <h1>List of Names</h1>
+<List/>
+
     </div>
   );
 }
