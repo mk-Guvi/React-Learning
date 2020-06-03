@@ -9,6 +9,7 @@ import EventHandler from "../components/EventHandler";
 import EventBind from "../components/EventBindings"
 import ChangeState from "../components/ChangeState"
 import ParentComponent from "../components/ParentComponent"
+import Condtional from "../components/Conditonal"
 function App() {
   return (
     <div>
@@ -29,7 +30,9 @@ function App() {
       <ChangeState/>
       <h1>ParentComponent</h1>
       <ParentComponent/>
-      
+      <h1>Condtional</h1>
+      <Condtional/>
+          
   
     </div>
   );
