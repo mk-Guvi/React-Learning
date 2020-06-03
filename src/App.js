@@ -8,6 +8,7 @@ import SetStates from "../components/SetState";
 import EventHandler from "../components/EventHandler";
 import EventBind from "../components/EventBindings"
 import ChangeState from "../components/ChangeState"
+import ParentComponent from "../components/ParentComponent"
 function App() {
   return (
     <div>
@@ -26,7 +27,9 @@ function App() {
       <EventBind/>
       <h1>Change State :</h1>
       <ChangeState/>
- 
+      <h1>ParentComponent</h1>
+      <ParentComponent/>
+      
   
     </div>
   );
