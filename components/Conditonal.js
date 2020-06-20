@@ -10,6 +10,7 @@ class conditional extends Component {
 
   render() {
     //IF ELSE METHOD:
+    //If else statements doesn't  works inside JSX
     // if (this.state.isLoggedIn){
     //   return <div>Welcome MK</div>
 
