@@ -1,3 +1,22 @@
+REACT:
+*react is a open source library for building UI and it is  developed by FB.
+*It is not a framwork.
+*It is mostly used for developing UI .The other operations like routing and so on in REACT is done by using other libraries as it has a rich open source eco system.
+*React has component based architecture wich makes your application into small parts which can be composed into more complex UI.
+*Components also make possible to write reusable code[one artile written in React  can also be written in Angular,Vue etc with right data passing to it] .
+*React is declarative[example drawing a landcsape to artist and a child].
+*React will efficiently update and render  the compnents.
+*Dom updates are handled gracefully in react.
+
+PREREQUISITES:
+*open the terminal  and INSTALL NODE
+*Type npx i  create-react-app react-app<name of app>(this will create react application with neccessary libraries in the respective folder(react-app)).
+*cd react-app and npm start(this will start react in the localhost:3000)
+*open react-app folrder usind VS CODE and Remove all the files from SRC folder(so that wee can create our required app).
+NOTE:
+Babel dependecy is used to convert JSX in to JS which the browser can easily understand.
+Webpack is used to bind all the dependencies
+
 JSX:
 
 JavaScript XML (JSX)- Extension to the JavaScript language syntax.
@@ -51,7 +70,7 @@ this.props-Class components
 
 States:
 
-States is simply a data that component maintains,it can change its values too.
+States is simply a data  that is to be displayed when the component is rendered and render is responsible for describing what the UI should look like is.The output of render method is a react element(VIRTUAl DOM) which is a plain JS object that maps to DOM Element.STATES can change its values too.
 
 States are Mutable(changed)
 
