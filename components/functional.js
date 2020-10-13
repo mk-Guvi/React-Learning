@@ -1,6 +1,6 @@
-import React from "react";
-//Functional component
-function add() {
-  return <h1>This is Functional component</h1>;
-}
-export default add;//this allows to give any name in import section
+import React from "react"
+
+const fun=()=>{
+   return(<h1>this is functional component</h1>)}
+//export function Fun(){return <h1>this is functional component</h1>}//this makes to import this function with same name{Fun}
+ export default fun;//export default will allow you to implement any name while importing this function
