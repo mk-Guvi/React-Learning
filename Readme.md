@@ -164,4 +164,4 @@ To know ListRendering check out Files "List.js" and "Person.js"
 
 Note:
 Using index of map function m=as key in lists may affect in certain operations like sorting ,adding elements in the required position as react uses key to identify the items in lists.
-For an example if you want to add an element at the beginning of the list you cant add as the first element will be replaced by the previous item and the new element will agian be added at last thought the index value of the first element will be changed to he index value of the new element.
+For an example if you want to add an element at the beginning of the list you cant add as the first element because it will be replaced by the previous item and the new element will againn be added at last though the index value of the first element will be changed to the index value of the new element.
