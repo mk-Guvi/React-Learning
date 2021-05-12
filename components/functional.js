@@ -3,4 +3,7 @@ import React from "react";
 function add() {
   return <h1>This is Functional component</h1>;
 }
-export default add;//this allows to give any name in import section
+// export function add() {.. this allows us to import with exact function name and show import it with  brackets {add}
+//   return <h1>This is Functional component</h1>;
+// }
+export default add; //this allows to give any name in import section

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 class stat extends Component {
   //this is required because we extend react component class and call has to be made to base class constructor
+
   constructor() {
     super();
     this.state = {

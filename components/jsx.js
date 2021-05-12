@@ -12,8 +12,8 @@ import React from "react";
 //It requires minimum 3 parameters  for every tag
 function NoJsx() {
   return React.createElement(
-    "div",
-    { id: "any", className: "any" },
+    "div", //element
+    { id: "any", className: "any" }, //attributes
     React.createElement("h1", null, "This is without jsx")
   );
 }
