@@ -165,3 +165,75 @@ To know ListRendering check out Files "List.js" and "Person.js"
 Note:
 Using index of map function m=as key in lists may affect in certain operations like sorting ,adding elements in the required position as react uses key to identify the items in lists.
 For an example if you want to add an element at the beginning of the list you cant add as the first element because it will be replaced by the previous item and the new element will againn be added at last though the index value of the first element will be changed to the index value of the new element.
+
+styles-refer stylesheet.js and stylesheet.css
+
+Lifecycle Methods in Class:
+when we create a component it goes under several stages in their lifecycle.React provides built-in methods which we can override in certain stages of lifecycle.
+
+1.)Mounting:
+
+when an instance of a component is being created and inserted into the dom.
+
+methods of mounting:
+
+constructor,static getDerivedStateFromProps,render and componentDidMount
+
+CONSTRUCTOR:
+
+A special function that wil get called whenever a new component is created
+
+USED FOR: initializing a state and binding the event handlers
+
+Not To DO in Constructor:
+It should not have side effects example:
+you should never make a HTTP requests inside a constructor
+
+static getDerivedStateFromProps:
+
+when the state of the component depends on the changes in props over time you can use this method to set the State.
+
+since this method is a static method you cant use this.setState within this method.
+
+Not To DO in static getDerivedStateFromProps:
+It should not have side effects example:
+you should never make a HTTP requests inside a constructor
+
+RENDER:
+
+It is the must required method in class component
+
+It reads props and state and return the JSX
+
+Not To DO in Render:
+Do not change the state or interact with dom or make ajax calls
+
+componentDidMount:
+
+It is invoked after a component and all its children components have been rendered to the dom.
+
+It is the perfect place to cause side effects that is making aajax calls to load data or interact with DOM
+
+2.)Updating:
+
+when a component is be re-rendered as a result of changes to either its props or state
+
+methods of updating:
+
+static getDerivedStateFromProps,render,shouldComponentUpdate,componentDidUpdate and getSnapShotBeforeUpdate.
+
+3.)Unmounting:
+
+when a component is being removed from the dom
+
+methods of Unmounting:
+
+componentwillUnmount
+
+4.)Error Handling:
+
+When there is an error during rendering,in a lifecycle method, or in the constructor of any child components.
+
+methods of mounting:
+
+static getDerivedStateFromError and componentDidCatch

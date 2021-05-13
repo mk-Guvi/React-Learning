@@ -11,6 +11,8 @@ import ChangeState from "../components/ChangeState";
 import ParentComponent from "../components/ParentComponent";
 import Condtional from "../components/Conditonal";
 import List from "../components/List";
+import Stylesheet from "../components/Stylesheet";
+import Mount from "../components/lifecycle/Mount";
 function App() {
   return (
     <div>
@@ -37,8 +39,10 @@ function App() {
       
           
     */}
-      <h1>List of Names</h1>
-      <List />
+      {/* <h1>List of Names</h1>
+      <List /> */}
+      {/* <Stylesheet primary={true} /> */}
+      <Mount />
     </div>
   );
 }
