@@ -16,6 +16,17 @@ class ChildMount extends Component {
     console.log("Childmount-componentDidMount");
   }
 
+  shouldComponentUpdate() {
+    console.log("Childmount-shouldComponentUpdate");
+    return true;
+  }
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log("Childmount-getSnapshotBeforeUpdate");
+    return null;
+  }
+  componentDidUpdate() {
+    console.log("Childmount-componentDidUPdate");
+  }
   render() {
     console.log("Childmount-render");
     return <h1>This is Class child-Component</h1>;
