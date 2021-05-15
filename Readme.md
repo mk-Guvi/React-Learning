@@ -316,3 +316,8 @@ let re2=(a===c)//returns true
 MEMO:
 syntax:React.memo(functional_component_name)
 to acheive pure components features in functional compnents we use memo.
+
+REFs:[ref.js]
+It allows us to access the DOM-Nodes in directly.
+
+To know how the childComponent methods are called in parent component refer INputREf folder
