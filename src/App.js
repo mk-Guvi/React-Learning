@@ -15,6 +15,9 @@ import ParentRef from "../components/InputRef/ParentRef";
 import List from "../components/List";
 import Stylesheet from "../components/Stylesheet";
 import Portals from "../components/Portals";
+import Errorb from "../components/EB/ErrorB";
+import Eb from "../components/EB/Eb";
+
 function App() {
   return (
     <div>
@@ -46,8 +49,14 @@ function App() {
       {/* <Stylesheet primary={true} /> */}
       {/* <Mount /> */}
       {/* <Ref /> */}
-      <ParentRef />
-      <Portals />
+      {/* <ParentRef />
+      <Portals /> */}
+      <Errorb>
+        <Eb heroName="mk" />
+      </Errorb>
+      <Errorb>
+        <Eb heroName="joker" />
+      </Errorb>
     </div>
   );
 }

@@ -275,13 +275,22 @@ It helps in cancelling the network requests,removing event handlers,cancelling a
 
 DO not use SetState method as the compnent will never re-render after it is unmounted
 
-4.)Error Handling:
+4.)Error Handling:[EB]
 
 When there is an error during rendering,in a lifecycle method, or in the constructor of any child components.
 
-methods of mounting:
+ErrorBoundary:
+Error Boundary are React components that catch JS error in their child component tree,log those errors and display a full-back UI.
+
+A class component that implements either one or both of the lifecycle methods static getDerivedStateFromError and componentDidCatch becomes an error boundary
+
+The placement of EB also matters as it controls if the entire app should have the fall-back UI or just the component causing the problem.
+
+methods of Error Handling:
 
 static getDerivedStateFromError and componentDidCatch
+
+static getDerivedStateFromError method is used to render a fallback UI after an error is thrown and the componentDidCatch is used to log the error Informations.
 
 PureComponents And Memo:
 
@@ -322,7 +331,7 @@ It allows us to access the DOM-Nodes in directly.
 
 To know how the childComponent methods are called in parent component refer INputREf folder
 
-PORTALS:
+PORTALS:[Portal.js]
 portals allow us to render children-components outside the dom of parentComponent
 
 USES:
