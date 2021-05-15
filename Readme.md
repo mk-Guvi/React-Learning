@@ -282,3 +282,37 @@ When there is an error during rendering,in a lifecycle method, or in the constru
 methods of mounting:
 
 static getDerivedStateFromError and componentDidCatch
+
+PureComponents And Memo:
+
+A regular component does not implement the shouldComponentUPdate Method.it always returns true by default
+
+A pureCompnent implements shouldComponentUpdate with a shallow props and state comparisons.
+
+the component is only re-rendered when the shallow comparison of prevprops/prevstates is equal to the current states/props
+
+purecomponents prevents unnecessary rerenderings
+
+Note:
+
+\*if parent component is not rerendered then child components are not rerendered.
+
+\*you should not mutate object/array in props/states for an example if you need to add in item in an array dont mutate it by pushing it into the array.the reference to the array doesnt change and because purecomponents checks only the reference the component will not be re-rendered even if there is a change.
+
+\*It is good idea to ensure that all the childComponents are also pure components
+
+shallow comparisons:
+primitive types:
+if var "a" and "b" has the same value and type then shallow comparison returns true
+Complex types:[objects,arrays]
+let a=[1,2]
+let b=[1,2]
+let c=a
+
+let re1=(a===b)//returns false as it does not reference the same object
+
+let re2=(a===c)//returns true
+
+MEMO:
+syntax:React.memo(functional_component_name)
+to acheive pure components features in functional compnents we use memo.
