@@ -321,3 +321,11 @@ REFs:[ref.js]
 It allows us to access the DOM-Nodes in directly.
 
 To know how the childComponent methods are called in parent component refer INputREf folder
+
+PORTALS:
+portals allow us to render children-components outside the dom of parentComponent
+
+USES:
+It helps in dealing with CSS of the parent component when the Childcomponent is a model/popup/tooltip.
+
+Even the portals can be anywhere in the domNode,It behaves like normal ReactChild component by which enables EventBubbling .

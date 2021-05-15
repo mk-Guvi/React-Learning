@@ -14,7 +14,7 @@ import Ref from "../components/Ref";
 import ParentRef from "../components/InputRef/ParentRef";
 import List from "../components/List";
 import Stylesheet from "../components/Stylesheet";
-import Mount from "../components/lifecycle/Mount";
+import Portals from "../components/Portals";
 function App() {
   return (
     <div>
@@ -47,6 +47,7 @@ function App() {
       {/* <Mount /> */}
       {/* <Ref /> */}
       <ParentRef />
+      <Portals />
     </div>
   );
 }
