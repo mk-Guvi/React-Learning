@@ -171,7 +171,7 @@ styles-refer stylesheet.js and stylesheet.css
 Lifecycle Methods in Class:
 when we create a component it goes under several stages in their lifecycle.React provides built-in methods which we can override in certain stages of lifecycle.
 
-1.)Mounting:
+1.)Mounting:[mount.js,childMount.js]
 
 when an instance of a component is being created and inserted into the dom.
 
@@ -192,6 +192,10 @@ you should never make a HTTP requests inside a constructor
 static getDerivedStateFromProps:
 
 when the state of the component depends on the changes in props over time you can use this method to set the State.
+
+It is static method that recives props and states as parameter and returns null or object of that represents the updated state of a component
+
+this method is called everytime when the component is re-rendered
 
 since this method is a static method you cant use this.setState within this method.
 
@@ -214,7 +218,7 @@ It is invoked after a component and all its children components have been render
 
 It is the perfect place to cause side effects that is making aajax calls to load data or interact with DOM
 
-2.)Updating:
+2.)Updating:[mount.js,childMount.js]
 
 when a component is be re-rendered as a result of changes to either its props or state
 
@@ -222,13 +226,54 @@ methods of updating:
 
 static getDerivedStateFromProps,render,shouldComponentUpdate,componentDidUpdate and getSnapShotBeforeUpdate.
 
+shouldComponentUpdate:
+
+It receives the updated props and states.
+
+By default all the components are re-rendered whwnver a change occurs in props/states. To prevent this default rerendering we use this method by returning false.
+
+It compares the previous prop/states with next props/states and returns true or false by which the re-rendering can be prevented.
+
+It is used for performance optimization
+
+It is rarely used.
+
+Not To DO in shouldComponentUpdate:
+It should not have side effects example:
+you should never make a HTTP requests inside a constructor
+
+getSnapShotBeforeUpdate:
+It receives the provProps/prevStates as parameter.
+
+It is called right before the changes from the virtual Dom are to be reflected in the actual Dom
+
+It is rarely used
+
+It is used to capture some informnation from the DOM for an example.you can read scroll position and maintain itgs position even after th rerender of the component
+
+This method returns null or a value.This returned value is used as third parameter in
+componentDidUpdate method.
+
+componentDidUpdate:
+This method is called after the render is finished in the re-render cycles.Which ensures that all components are rendered properly after the update in props/states.
+
+It is called only once for each re-render cycle which allows us to have side effects that is we canmake ajax call but make sure you compare the prevprops with updatedprops so that we can avoid unwanted ajax calls.
+
+It recieves prevProps,prevState,snapshotValue as parameters.
+
 3.)Unmounting:
 
 when a component is being removed from the dom
 
 methods of Unmounting:
 
-componentwillUnmount
+componentwillUnmount:
+
+this method is invoked immediately before a component is unmounted and destroyed.
+
+It helps in cancelling the network requests,removing event handlers,cancelling any subscriptions and also invalidating timers
+
+DO not use SetState method as the compnent will never re-render after it is unmounted
 
 4.)Error Handling:
 
