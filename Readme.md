@@ -338,3 +338,11 @@ USES:
 It helps in dealing with CSS of the parent component when the Childcomponent is a model/popup/tooltip.
 
 Even the portals can be anywhere in the domNode,It behaves like normal ReactChild component by which enables EventBubbling .
+
+Higher Order Components[HOC]:
+
+Hoc helps in sharing common functionalities beween the components without duplicating the code.If you have same parent component the fucntionalities can be shared by moving the states to parent component and pass it is as props to the child components but it cant be achieved when the childComoponents have different parent Component thats where the HOC solve the problem.
+
+Hoc takes a component as argument and returns a new component
+
+The Hoc shares different states to the components so the change in states of one component doesnt affect the other component

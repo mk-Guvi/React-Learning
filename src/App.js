@@ -17,6 +17,8 @@ import Stylesheet from "../components/Stylesheet";
 import Portals from "../components/Portals";
 import Errorb from "../components/EB/ErrorB";
 import Eb from "../components/EB/Eb";
+import Com1 from "../components/HOC/Com1";
+import Com2 from "../components/HOC/Com2";
 
 function App() {
   return (
@@ -51,12 +53,15 @@ function App() {
       {/* <Ref /> */}
       {/* <ParentRef />
       <Portals /> */}
-      <Errorb>
+      {/* <Errorb>
         <Eb heroName="mk" />
       </Errorb>
       <Errorb>
         <Eb heroName="joker" />
-      </Errorb>
+      </Errorb> */}
+      {/* name="mk"-this props will not be accepted in HOC if we dont use={...this.props} */}
+      <Com1 name="mk" />
+      <Com2 />
     </div>
   );
 }
