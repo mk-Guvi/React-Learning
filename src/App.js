@@ -19,6 +19,8 @@ import Errorb from "../components/EB/ErrorB";
 import Eb from "../components/EB/Eb";
 import Com1 from "../components/HOC/Com1";
 import Com2 from "../components/HOC/Com2";
+import ComC from "../components/Context/ComC";
+import { UserProvider } from "../components/Context/useContext";
 
 function App() {
   return (
@@ -60,8 +62,13 @@ function App() {
         <Eb heroName="joker" />
       </Errorb> */}
       {/* name="mk"-this props will not be accepted in HOC if we dont use={...this.props} */}
-      <Com1 name="mk" />
-      <Com2 />
+      {/* <Com1 name="mk" />
+
+      <Com2 /> */}
+      {/*Step-2: <UserProvider>-to share the data to all the components wrap it with the provider .Here the data is value="mohammed which can be access by all the components under the provider component*/}
+      <UserProvider value="Mohammed">
+        <ComC />
+      </UserProvider>
     </div>
   );
 }

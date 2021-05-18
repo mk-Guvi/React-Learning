@@ -346,3 +346,18 @@ Hoc helps in sharing common functionalities beween the components without duplic
 Hoc takes a component as argument and returns a new component
 
 The Hoc shares different states to the components so the change in states of one component doesnt affect the other component
+
+Context:
+
+Context provides a way to pas the data through the component tree without having to pass props down manually at every level.
+
+steps:
+1.)create the context
+2.)proide context value
+3.)consume the context value
+
+Limitations of Context-type sharing data:
+
+1.)It works only in class comopnents
+
+2.)if you want share more than once conrtext value you need use consumer components instead of contxt-type.
