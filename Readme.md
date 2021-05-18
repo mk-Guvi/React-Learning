@@ -391,3 +391,28 @@ the useState returns an array with 2 elements.The first one is the current value
 when new state deponds on the previous state you can pass a fucntion with prevState as parameter to the setter funtion which can change the state based on previous state value.
 
 when dealing with objects or arrays, always make sure to spread your state varaible and then call the setter funciton.
+
+USE EFFECT:
+
+This Hook lets your perform side Effects in functional components
+
+It is a close replacements for componentDidMount,componentdidUpdate and componentWillUnmount.
+
+In class component the side Effects are performed with componentDidMount,componentdidUpdate and componentWillUnmount lifcycle methods.
+
+In class ,the code is repeated for doing the same work and the unrelated code are grouped which is solved by useEffect hooks
+//componentDidMount will be executed only once in the component lifecycle
+componentDidMount(){
+document.title=`clicked ${this.state.count}times`
+this.interval=setInterval(this.tick,1000)
+}
+//to update based on the button clicked we use componentDidUpdate.componentDidUpdate is called anytime the component updates
+
+componentDidUpdate(){
+document.title=`clicked ${this.state.count}times`
+}
+
+//we can clear the interval the component is removed from the dom.
+componentWillUnMount(){
+clear(this.interval))
+}
