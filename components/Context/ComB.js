@@ -6,7 +6,7 @@ class ComB extends Component {
     // static contextType=UserContext
     return (
       <>
-        Component-B By Context-Type : {this.context}
+        {/* Component-B By Context-Type : {this.context} */}
         <ComA />;
       </>
     );
@@ -14,5 +14,5 @@ class ComB extends Component {
 }
 
 //step-2[Context-type]:Assgining the userCOntext to the required component
-ComB.contextType = UserContext;
+// ComB.contextType = UserContext;
 export default ComB;

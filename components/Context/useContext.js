@@ -4,6 +4,7 @@ import React from "react";
 //React.createContext() -It comes with a provider and consumer components which are the net two steps of creating context
 //createContext("mk")-its the default value of context that if you dont wrap the components with provider component then the consumer components will take this as default value
 const UserContext = React.createContext("mk");
+export const User2Context = React.createContext("mk");
 
 const UserProvider = UserContext.Provider;
 const UserConsumer = UserContext.Consumer;
