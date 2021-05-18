@@ -396,6 +396,8 @@ USE EFFECT:
 
 This Hook lets your perform side Effects in functional components
 
+useEffect runs after first render and also after every update of the components
+
 It is a close replacements for componentDidMount,componentdidUpdate and componentWillUnmount.
 
 In class component the side Effects are performed with componentDidMount,componentdidUpdate and componentWillUnmount lifcycle methods.
