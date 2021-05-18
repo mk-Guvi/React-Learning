@@ -21,6 +21,7 @@ import Com1 from "../components/HOC/Com1";
 import Com2 from "../components/HOC/Com2";
 import ComC from "../components/Context/ComC";
 import { UserProvider } from "../components/Context/useContext";
+import AppH from "../components/HOOKS/AppH";
 
 function App() {
   return (
@@ -66,9 +67,10 @@ function App() {
 
       <Com2 /> */}
       {/*Step-2: <UserProvider>-to share the data to all the components wrap it with the provider .Here the data is value="mohammed which can be access by all the components under the provider component*/}
-      <UserProvider value="Mohammed">
+      {/* <UserProvider value="Mohammed">
         <ComC />
-      </UserProvider>
+      </UserProvider> */}
+      <AppH />
     </div>
   );
 }

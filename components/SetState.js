@@ -26,7 +26,7 @@ class counter extends Component {
     console.log(this.state.count);
   }
   increments() {
-    //Below the function is  is called multiple times so that the intial state(0) get added by 1 as much times the function is called but if  you use setState without prevState as argument then it will use the function for onece this is because react may group multiple setstate calls into single update for better performance that is all function calls are done in one go.
+    //Below the function is  is called multiple times so that the intial state(0) get added by 1 as much times the function is called but if  you use setState without prevState as argument then it will use the function for once this is because react may group multiple setstate calls into single update for better performance that is all function calls are done in one go.
     this.increament();
     this.increament();
     this.increament();

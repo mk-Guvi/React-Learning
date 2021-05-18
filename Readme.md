@@ -361,3 +361,33 @@ Limitations of Context-type sharing data:
 1.)It works only in class comopnents
 
 2.)if you want share more than once conrtext value you need use consumer components instead of contxt-type.
+
+HOOKS:
+Hooks are new feature addition in React which allow you to use React features without having to write in a class
+
+Hooks doesnt work inside a class
+
+Hooks avoids the confusion with "this" keyword
+
+Hooks allow you to reuse statefull logic without changing the component hierarchy.You can avoid advance react patterns to a great extent which makes code much simpler to follow.
+
+Hooks organize the logic inside the component into reusable units that is the related code can be put together which will avoid the bugs.
+
+Rules of Hooks:
+
+Dont call hooks inside loops,conditions or nested functions
+
+call them from within React Funcitonal Component and not just any regular functions
+
+USESTATE:
+this hook lets you addd the state to functional components
+
+In classes, the stateis always an object
+
+with the useState hook,the state doesnt have to be an object
+
+the useState returns an array with 2 elements.The first one is the current value of the state and the second one is the setter function that change the state.
+
+when new state deponds on the previous state you can pass a fucntion with prevState as parameter to the setter funtion which can change the state based on previous state value.
+
+when dealing with objects or arrays, always make sure to spread your state varaible and then call the setter funciton.
