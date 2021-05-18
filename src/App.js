@@ -23,6 +23,7 @@ import ComC from "../components/Context/ComC";
 import { User2Context, UserProvider } from "../components/Context/useContext";
 import AppH from "../components/HOOKS/AppH";
 import Com from "../components/HOOKS/USECONTEXT/Com";
+import UseReducers from "../components/HOOKS/UseReducers";
 
 function App() {
   return (
@@ -75,7 +76,8 @@ function App() {
       </UserProvider> */}
       {/* <AppH /> */}
 
-      <Com />
+      {/* <Com /> */}
+      <UseReducers />
     </div>
   );
 }

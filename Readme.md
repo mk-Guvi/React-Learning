@@ -418,3 +418,33 @@ document.title=`clicked ${this.state.count}times`
 componentWillUnMount(){
 clear(this.interval))
 }
+
+USEREDUCERS:
+
+useReducer is a hook that is used for state managment in React
+
+It is an alternative to useState
+
+useState is built using useReducers
+
+useReducers is related to reducer functions in JS
+
+reducer(currentState,action)
+useReducer(reducer(a-function),initialState)
+
+Reducers in JS VS useReducers
+
+1.)a-]array.reduce(reducer(a function),initialvalue)
+
+b-]useReducer(reducer(a-function),initialState)
+
+2.)a-]It returns as
+
+singleValue=reducer(accumulator,itemValue)
+
+b-]It returns as
+
+newState=reducer(currentState,action)
+
+3.) a-]reduce method returns as single value
+b-]useReducer returns as pair of values,[newstate,dispatch]
