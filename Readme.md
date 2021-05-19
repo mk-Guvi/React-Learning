@@ -448,3 +448,27 @@ newState=reducer(currentState,action)
 
 3.) a-]reduce method returns as single value
 b-]useReducer returns as pair of values,[newstate,dispatch]
+
+USECALLBACK:
+
+both React.memo and usecallback are used to optimize the components renderings.
+
+React.memo is used to render only when there is an change in props or states of a component which optimizes the component by reducing the unneccesary rerenderings.
+
+when a parentcomponent rerenders each time a new function is created which is passed as props in the child components.Though the function name remainds same it is considered as new function in react render.
+
+If there are childComponents with differents functions as props they will be called even we use React.memo and also even there is no change in the states of the other components because react thinks that the other components funcions as new function.To over come this issue we use callback hook
+
+useCallback is a hook that will return a memoized versionof the callback funcition that only changes if one of the dependencies has changed
+
+It is usefull when passing callbacks[that is two child components calling different functions as props] to optimized child components[components that uses React.memo] that rely on reference equality[checking whether the functions are equal] to prevent unneccessary renders.If these conditions are met then the funcitons of childCompoennts are wrapped under usecallback hook with a dependency array where the usecallback hook is looks for the change in state/props.Thus these usecallback hooks returns a cached function which is passed as props in the childComponents
+
+USEMEMO:
+
+USEmemo is similar to Use Callback hook.The difference is that useCallback caches the provided function instance itself whereas Usememo invokes the function and caches it result which is used in other functions of other childComponents to stop rendering when there is no change in the provided function.
+
+When you need to cache a function use UseCallback or when you just need the result of a function use useMemo hook
+
+For More Details on Usecallback and UseMemo:
+
+https://kentcdodds.com/blog/usememo-and-usecallback
