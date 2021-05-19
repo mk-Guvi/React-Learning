@@ -481,3 +481,12 @@ As we know useRef can hold a reference to a dom node using the ref
 attribute it can also be used to store any mutable value and the value
 will be persisted through rerenders while also no causing any additional
 renders when its value changes
+
+CUSTOM HOOKS:
+A custom Hook is basically JS function whose name starts with "use"
+
+A custom Hook can also call other hooks if required
+
+A custom hooks avoid repeating the code that runs certain logic which can be used in multiple components.
+
+It can be used used to share logic or we can say it is Alternatives to HOCS and Render Props.
