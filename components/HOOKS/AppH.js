@@ -5,6 +5,7 @@ import UseEffectCleanUp from "./UseEffectCleanUp";
 import ReducerCon from "./USECONTEXT/Reducer+context";
 import UseReducers from "./UseReducers";
 import Com from "./USECONTEXT/Com";
+import UseRef from "./UseRef";
 const initialState = 0;
 //this reducer function returns a newstate by  receiving current state and action[which changes the state of the function] as parameters
 
@@ -36,7 +37,9 @@ const AppH = () => {
         {/* <UseEffectCleanUp /> */}
         {/* <Com /> */}
         {/* <UseReducers /> */}
-        <ReducerCon />
+        <UseRef />
+        {/* For reducer+context */}
+        {/* <ReducerCon /> */}
       </Context.Provider>
     </>
   );

@@ -459,7 +459,7 @@ when a parentcomponent rerenders each time a new function is created which is pa
 
 If there are childComponents with differents functions as props they will be called even we use React.memo and also even there is no change in the states of the other components because react thinks that the other components funcions as new function.To over come this issue we use callback hook
 
-useCallback is a hook that will return a memoized versionof the callback funcition that only changes if one of the dependencies has changed
+useCallback is a hook that will return a memoized version of the callback function that only changes if one of the dependencies has changed
 
 It is usefull when passing callbacks[that is two child components calling different functions as props] to optimized child components[components that uses React.memo] that rely on reference equality[checking whether the functions are equal] to prevent unneccessary renders.If these conditions are met then the funcitons of childCompoennts are wrapped under usecallback hook with a dependency array where the usecallback hook is looks for the change in state/props.Thus these usecallback hooks returns a cached function which is passed as props in the childComponents
 
@@ -472,3 +472,12 @@ When you need to cache a function use UseCallback or when you just need the resu
 For More Details on Usecallback and UseMemo:
 
 https://kentcdodds.com/blog/usememo-and-usecallback
+
+USEREF:
+
+UseRef hook is used to manipulate the dom node directly.
+
+As we know useRef can hold a reference to a dom node using the ref
+attribute it can also be used to store any mutable value and the value
+will be persisted through rerenders while also no causing any additional
+renders when its value changes
