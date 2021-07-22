@@ -230,13 +230,15 @@ shouldComponentUpdate:
 
 It receives the updated props and states.
 
-By default all the components are re-rendered whwnver a change occurs in props/states. To prevent this default rerendering we use this method by returning false.
+By default all the components are re-rendered whenver a change occurs in props/states. To prevent this default rerendering we use this method by returning false.
 
-It compares the previous prop/states with next props/states and returns true or false by which the re-rendering can be prevented.
+It compares the previous prop/states with next props/states and returns true[re-render occurs] or false[re-render is stopped] by which the re-rendering can be prevented.
 
 It is used for performance optimization
 
 It is rarely used.
+
+It will be called before the render method is executed so re-render is prevented        
 
 Not To DO in shouldComponentUpdate:
 It should not have side effects example:
